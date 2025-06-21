@@ -1,0 +1,12 @@
+# Arquivos de sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.swp
+*~
+
+# Arquivos de build futuros
+dist/
+build/

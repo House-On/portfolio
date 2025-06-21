@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variáveis gerais do projeto */
+:root {
+    --fonte-padrao: "Roboto", sans-serif;
+    --cor-1: #131515;
+    --cor-2: #FFFAFB;
+    --cor-3: #339989;
+    --cor-4: #7DE2D1;
+    --cor-5: #2B2C28;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-2);
+}
+
+body {
+    height: 100dvh;
+    background-color: yellow;
+
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: var(--cor-1);
+    width: 100dvw;
+    height: 12dvh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+#logo-container {
+    background-color: var(--cor-5);
+    width: 15%;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    padding: 5px;
+    overflow: hidden;
+}
+
+#logo-container > h1 {
+    color: var(--cor-2);
+    
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+#logo-container > h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#logo-img {
+    height: 100%;
+}
+
+#options {
+    background-color: var(--cor-5);
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.option {
+    color: var(--cor-2);
+
+    font-weight: 500;
+
+    background-color: var(--cor-3);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.option:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#conteudo-container {
+    background-color: var(--cor-2);
+}
