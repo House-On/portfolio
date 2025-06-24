@@ -22,7 +22,6 @@ a {
 
 body {
     height: 100dvh;
-    background-color: yellow;
 
     font-family: var(--fonte-padrao);
 }
@@ -35,6 +34,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    box-shadow: 2px 2px 20px 20px rgb(0, 0, 0);
 
     padding: 0 60px;
 }
@@ -92,6 +93,64 @@ header {
     cursor: pointer;
 }
 
+/* Seção referente ao conteúdo do Site */
+
 #conteudo-container {
+    background-color: var(--cor-5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.expl-tela-container {
+    background-color: lightblue;
+
+    width: 75%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tela-container {
+    width: 50%;
+
     background-color: var(--cor-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analise-tela {
+    width: 50%;
+
+    background-color: var(--cor-3);
+
+    padding: 25px;
+
+    color: var(--cor-2);
+}
+
+.analise-tela > h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.analise-tela > p {
+    font-weight: 600;
+    text-align: justify;
+}
+
+.tela-img {
+    height: 400px;
+
+    box-shadow: 0px 0px 40px 15px rgba(0,0,0,0.30);
 }
