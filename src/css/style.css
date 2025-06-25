@@ -24,6 +24,8 @@ body {
     height: 100dvh;
 
     font-family: var(--fonte-padrao);
+
+    background-color: var(--cor-5);
 }
 
 header {
@@ -34,19 +36,18 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 
-    box-shadow: 2px 2px 20px 20px rgb(0, 0, 0);
-
-    padding: 0 60px;
+    z-index: 2;
+    box-shadow: 0px 3px 12px 2px rgba(0,0,0,0.40);
 }
 
 #logo-container {
-    background-color: var(--cor-5);
-    width: 15%;
+    width: 50%;
 
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-around;
 
     padding: 5px;
     overflow: hidden;
@@ -56,7 +57,7 @@ header {
     color: var(--cor-2);
     
     font-weight: 800;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #logo-container > h1:hover {
@@ -65,35 +66,65 @@ header {
 }
 
 #logo-img {
-    height: 100%;
+    height: 90%;
 }
 
 #options {
-    background-color: var(--cor-5);
-    width: 60%;
+    width: 50%;
 
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0 10px;
 }
 
-.option {
-    color: var(--cor-2);
-
-    font-weight: 500;
-
+#option {
     background-color: var(--cor-3);
-    padding: 15px;
+    color: var(--cor-2);
+    height: 60%;
+
+    font-weight: 600;
+    font-size: 1em;
+
     border-radius: 12px;
+    padding: 5px;
 }
 
-.option:hover {
-    text-decoration: underline;
-    cursor: pointer;
+#option > option {
+    background-color: var(--cor-3);
+    color: var(--cor-2);
 }
 
 /* Seção referente ao conteúdo do Site */
+
+#resumo-projeto {
+    background-color: var(--cor-2);
+
+    border-radius: 12px;
+    padding: 20px;
+
+    height: 70%;
+
+    margin-bottom: 10px;
+}
+
+#resumo-projeto > h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: underline;
+
+    color: var(--cor-3);
+
+    margin-bottom: 20px;
+}
+
+#resumo-projeto > p {
+    text-align: justify;
+    font-size: 0.9em;
+}
 
 #conteudo-container {
     background-color: var(--cor-5);
@@ -102,17 +133,18 @@ header {
     flex-direction: column;
     align-items: center;
 
+    z-index: 1;
     padding: 20px;
 }
 
 .expl-tela-container {
     background-color: lightblue;
 
-    width: 75%;
-    height: 500px;
+    width: 100%;
+    height: 60dvh;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 10px 0;
 
     border-radius: 12px;
@@ -120,7 +152,9 @@ header {
 }
 
 .tela-container {
-    width: 50%;
+    height: 60%;
+
+    padding: 5px;
 
     background-color: var(--cor-2);
     display: flex;
@@ -129,28 +163,43 @@ header {
 }
 
 .analise-tela {
-    width: 50%;
-
-    background-color: var(--cor-3);
-
-    padding: 25px;
+    height: 40%;
 
     color: var(--cor-2);
+    background-color: var(--cor-3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 15px;
+
+    overflow: auto;
+    position: relative;
 }
 
-.analise-tela > h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
+.analise-tela h2 {
+    background-color: var(--cor-3);
+
+    padding: 15px 0;
+    font-size: 1.2em;
     font-weight: 800;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .analise-tela > p {
     font-weight: 600;
     text-align: justify;
+
+    font-size: 0.8em;
+
+    padding-bottom: 10px;
 }
 
 .tela-img {
-    height: 400px;
+    height: 100%;
 
     box-shadow: 0px 0px 40px 15px rgba(0,0,0,0.30);
 }
