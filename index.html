@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="icon" type="image/x-icon" href="./src/assets/logo-app.png"></Link>
+    <Link rel="stylesheet" href="./src/css/reset.css"></Link>
+    <Link rel="stylesheet" href="./src/css/style.css"></Link>
+    <title>Portfólio - Uny</title>
+</head>
+<body>
+    <header>
+        <section id="logo-container">
+            <img id="logo-img" src="./src/assets/icons/logo-app.png" alt="Logo do Uny">
+            <h1>Uny</h1>
+        </section>
+
+        <section id="options">
+            <select id="option" name="selecao">
+                <option value="">-- Navegue para --</option>
+                <option value="Github">Github</option>
+                <option value="Ideia">Ideia</option>
+                <option value="Telas">Telas</option>
+            </select>
+        </section>
+    </header>
+
+    <section id="conteudo-container">
+
+        <article id="resumo-projeto">
+            <h1 id="Ideia">Ideia Geral do Aplicativo</h1>
+            <p>
+                Controle inteligente, praticidade e eficiência ao seu alcance. Este aplicativo foi desenvolvido para simplificar a gestão de dispositivos IoT, como ar-condicionados, lâmpadas, trancas eletrônicas e portões automáticos, oferecendo uma experiência completa para residências e empresas. Com integração de Inteligência Artificial, o app aprende a rotina dos usuários e executa automações de forma proativa, tornando o dia a dia mais confortável, seguro e eficiente. Imagine chegar ao seu ambiente e encontrar o ar-condicionado ligado na temperatura ideal, ou ter suas luzes e dispositivos configurados automaticamente, tudo com base no seu comportamento. Além de proporcionar comodidade, o aplicativo contribui para o uso consciente da energia e permite o controle de múltiplos ambientes em um único lugar, oferecendo uma solução inteligente e flexível para quem busca mais agilidade e praticidade na gestão de seus espaços.
+            </p>
+        </article>
+
+        <section id="Telas" class="expl-tela-container">
+            <section class="tela-container">
+                <img class="tela-img" src="./src/assets/images/tela-login.png" alt="Icone de Tela do Aplicativo">
+            </section>
+
+            <article class="analise-tela">
+                <h2>Login no App</h2>
+                <p>
+                    Comece rapidamente: crie sua conta ou conecte-se usando seu login do Google para uma experiência prática e integrada. Seus dados ficam sempre disponíveis e seguros, e você pode atualizá-los quando quiser. Esqueceu a senha? Sem problema. Em poucos cliques, você recebe um e-mail para redefini-la de forma simples e segura. Tudo pensado para facilitar o seu acesso e garantir agilidade no seu dia a dia.
+                </p>
+            </article>
+        </section>
+
+        <section class="expl-tela-container">
+
+            <article class="analise-tela">
+                <h2>Home do Aplicativo</h2>
+                <p>
+                    Gerencie seus ambientes com facilidade. Após o login, você tem total controle sobre os setores e dispositivos conectados ao aplicativo, de forma simples e intuitiva. Organize suas áreas preferidas, acesse rapidamente os dispositivos mais utilizados e personalize seus favoritos para navegar com ainda mais agilidade. Ideal para quem tem múltiplos espaços e quer tudo acessível em um só lugar.
+                </p>
+            </article>
+
+            <section class="tela-container">
+                <img class="tela-img" src="./src/assets/images/tela-home.png" alt="Icone de Tela do Aplicativo">
+            </section>
+        </section>
+
+        <section class="expl-tela-container">
+            <section class="tela-container">
+                <img class="tela-img" src="./src/assets/images/tela-chat.png" alt="Icone de Tela do Aplicativo">
+            </section>
+
+            <article class="analise-tela">
+                <h2>Chat Integrado com câmeras</h2>
+                <p>
+                    Precisa de ajuda? O chat inteligente está sempre disponível para responder dúvidas sobre o funcionamento do aplicativo, oferecer suporte e, em breve, fornecer insights valiosos como relatórios de consumo, desempenho e evolução dos seus dispositivos. Um atendimento rápido, direto e disponível a qualquer momento.
+                </p>
+            </article>
+        </section>
+
+        <section class="expl-tela-container">
+
+            <article class="analise-tela">
+                <h2>Configure Manualmente</h2>
+                <p>
+                    Tenha controle total dos seus dispositivos e setores de forma personalizada. Adicione novos equipamentos, remova os que não usa mais e configure tudo conforme a necessidade da sua empresa ou residência. O aplicativo se adapta ao seu ambiente, permitindo criar e organizar setores específicos com apenas alguns toques. Simples, eficiente e sob seu comando.
+                </p>
+            </article>
+
+            <section class="tela-container">
+                <img class="tela-img" src="./src/assets/images/tela-auto.png" alt="Icone de Tela do Aplicativo">
+            </section>
+
+        </section>
+
+        <section class="expl-tela-container">
+
+            <article class="analise-tela">
+                <h2 onclick="secreto()">Personalize seu Perfil</h2>
+                <p>
+                    Personalize sua experiência. Aqui você pode atualizar sua foto, alterar o nome da empresa, mudar a senha e escolher entre o tema claro ou escuro para deixar o aplicativo do seu jeito. Troque de conta rapidamente, sem complicação, ou, se desejar, exclua sua conta com total autonomia. Tudo isso de forma prática, para que a sua gestão seja ainda mais eficiente e com a sua cara.
+                </p>
+            </article>
+
+            <section class="tela-container">
+                <img class="tela-img" src="./src/assets/images/tela-perfil.png" alt="Icone de Tela do Aplicativo">
+            </section>
+
+        </section>
+    </section>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
