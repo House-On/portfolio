@@ -1,0 +1,60 @@
+
+@media (min-width: 992px){
+
+    header {
+        
+        padding: 0 50px;
+
+        justify-content: space-between;
+    }
+
+    #logo-container {
+        width: 20%;
+
+        justify-content: space-between;
+    }
+
+    #options {
+        width: 70%;
+
+        align-items: flex-end;
+    }
+
+    #conteudo-container {
+        width: 90%;
+
+        margin: auto;
+    }
+
+    #resumo-projeto > h1 {
+        font-size: 1.75em;
+    }
+
+    .expl-tela-container {
+        flex-direction: row;
+    }
+
+    .tela-container {
+        height: 100%;
+        width: 50%;
+    }
+
+    .analise-tela {
+        height: 100%;
+        width: 50%;
+
+        justify-content: center;
+
+        gap: 25px;
+    }
+
+    .analise-tela h2 {
+        font-size: 1.8em;
+
+        padding: 0;
+    }
+
+    .analise-tela > p {
+        font-size: 1em;
+    }
+}
