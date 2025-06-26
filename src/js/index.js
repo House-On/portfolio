@@ -9,16 +9,21 @@ select.addEventListener('change', (event) => {
     if(valor) {
         switch(valor){
             case 'Github':
-                window.location.href = "./src/pages/teste.html"
+                let url = "https://github.com/House-On"
+                window.open(url, "_blank")
                 break;
             case 'Ideia':
-                console.log('Indo para ideia')
+                window.location.href = "#Ideia"
                 break;
             case 'Telas':
-                console.log('Indo para as telas')
+                window.location.href = "#Telas"
                 break;
             default:
                 console.log('Nada')
         }
     }
 })
+
+function secreto(){
+    window.location.href = "./src/pages/teste.html"
+}
